@@ -1,6 +1,7 @@
-
+import { products } from './data/products'
 import ProductCard from './components/ProductoCard'
 import './App.css'
+
 
 
 function App() {
@@ -9,9 +10,14 @@ function App() {
     <div className='container'>
       <h1>Inventario</h1>
       <div className='card-list'>
-        <ProductCard nombre="Lapiz negro" precio={500} stock={40}/>
-        <ProductCard nombre="Resma A4" precio={12000} stock={8}/>
-        <ProductCard nombre="Fotocopia" precio={100} stock={999}/>
+        {products.map((product) =>(
+          <ProductCard 
+            key={product.id}
+            nombre={product.name}
+            precio={product.price}
+            stock={product.stock}
+          />
+        ))}
       </div>
     </div>
   )
