@@ -42,3 +42,23 @@ h1 {
   font-size: 0.875rem;
   color: #666;
 }
+
+.badge{
+  display: inline-block;
+  background: rgb(247, 234, 53);
+  color: rgb(255, 135, 22);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.sin-stock{
+  display: inline-block;
+  background: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
